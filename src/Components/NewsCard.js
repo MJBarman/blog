@@ -12,7 +12,7 @@ const NewsCard = ({ item }) => {
       </Text>
       <Text style={styles.author}>{item.author}</Text>
       <Image
-        resizeMode="scale"
+        resizeMode="cover"
         style={styles.image}
         source={{ uri: item.urlToImage }}
       />

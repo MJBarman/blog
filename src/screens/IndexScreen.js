@@ -18,7 +18,10 @@ const IndexScreen = () => {
 
   function getNewsFromAPI() {
     NewsAPI.get(
-      "top-headlines?country=us&apiKey=e2ae3da097264763b535007699ed7102"
+      "top-headlines?sources=bbc-news&apiKey=e2ae3da097264763b535007699ed7102"
+
+      // "top-headlines?country=us&apiKey=e2ae3da097264763b535007699ed7102"
+    
     )
       .then(async function (response) {
         setNews(response.data);
